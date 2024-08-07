@@ -1,4 +1,4 @@
-import { MainContent } from "./componetns";
+import { MainContent } from "./components";
 
 const App = () => {
   return (

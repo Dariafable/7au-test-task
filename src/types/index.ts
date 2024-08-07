@@ -4,6 +4,7 @@ export interface ITypingState {
   wpm: number;
   errors: number;
   correctChars: number;
+  accuracy: number;
   setTypedText: (typedText: string) => void;
   includePunctuation: boolean;
   includeNumbers: boolean;

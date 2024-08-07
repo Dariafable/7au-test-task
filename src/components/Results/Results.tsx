@@ -6,9 +6,7 @@ import Restart from "../Restart/Restart";
 import styles from "./Results.module.scss";
 
 const Results: React.FC = () => {
-  const { wpm, errors, correctChars, typedText } = useStore();
-
-  const accuracy = (correctChars / typedText.length) * 100 || 0;
+  const { wpm, errors, accuracy } = useStore();
 
   return (
     <div className={styles.results}>

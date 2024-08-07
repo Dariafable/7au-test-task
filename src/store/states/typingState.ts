@@ -8,6 +8,7 @@ const typingState: StateCreator<IStoreState, [], [], ITypingState> = (set, get) 
   wpm: 0,
   errors: 0,
   correctChars: 0,
+  accuracy: 0,
   hasStarted: false,
   isFinished: false,
   includePunctuation: false,
@@ -29,6 +30,7 @@ const typingState: StateCreator<IStoreState, [], [], ITypingState> = (set, get) 
       .reduce((acc, char, i) => acc + (char === typedText[i] ? 1 : 0), 0);
 
     const errors = typedText.length - correctChars;
+    const accuracy = typedText.length > 0 ? (correctChars / typedText.length) * 100 : 0;
 
     const elapsedTime = (now - (state.startTime || now)) / 60000;
     const wpm =
@@ -43,6 +45,7 @@ const typingState: StateCreator<IStoreState, [], [], ITypingState> = (set, get) 
       typedText,
       errors,
       correctChars,
+      accuracy,
       wpm,
       endTime: isFinished ? now : null,
       isFinished,
@@ -63,6 +66,7 @@ const typingState: StateCreator<IStoreState, [], [], ITypingState> = (set, get) 
       wpm: 0,
       errors: 0,
       correctChars: 0,
+      accuracy: 0,
       startTime: null,
       endTime: null,
       timer: state.initialTimer,
@@ -78,6 +82,7 @@ const typingState: StateCreator<IStoreState, [], [], ITypingState> = (set, get) 
       wpm: 0,
       errors: 0,
       correctChars: 0,
+      accuracy: 0,
     }),
 });
 

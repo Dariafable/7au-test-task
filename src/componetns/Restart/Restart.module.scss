@@ -1,0 +1,22 @@
+.button {
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--color-light-green);
+  border: 1px solid var(--color-light-green);
+  border-radius: 4px;
+  color: var(--color-extraDark-gray);
+  font-size: 26px;
+  text-transform: lowercase;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background: transparent;
+    color: var(--color-light-gray);
+    border-color: var(--color-light-gray);
+  }
+}

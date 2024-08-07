@@ -1,0 +1,43 @@
+.timeSelector {
+  display: flex;
+  gap: 15px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.option {
+  color: var(--color-light-gray);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: 0.1s opacity linear;
+
+  &:hover,
+  &.active {
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width: 1920px) {
+    font-size: 1.042vw;
+  }
+
+  @media screen and (max-width: 1440px) {
+    font-size: 1.389vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.953vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.604vw;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 18px;
+  }
+}

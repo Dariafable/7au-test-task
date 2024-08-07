@@ -1,4 +1,6 @@
 # Мини-проект: Оценка скорости печати
+<img width="975" alt="Снимок экрана 2024-08-07 в 18 07 48" src="https://github.com/user-attachments/assets/7f281b83-a422-4b4c-9460-64ae5e0f8b46">
+<img width="975" alt="Снимок экрана 2024-08-07 в 18 08 52" src="https://github.com/user-attachments/assets/27259ce7-56c9-4cc9-8599-c99c81264422">
 
 ## Описание
 

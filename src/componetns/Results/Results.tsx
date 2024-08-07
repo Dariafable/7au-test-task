@@ -1,8 +1,9 @@
 import React from "react";
 import { useStore } from "../../store";
 
-import styles from "./Results.module.scss";
 import Restart from "../Restart/Restart";
+
+import styles from "./Results.module.scss";
 
 const Results: React.FC = () => {
   const { wpm, errors, correctChars, typedText } = useStore();

@@ -10,9 +10,9 @@ import Results from "../Results/Results";
 import Restart from "../Restart/Restart";
 import Timer from "../Timer/Timer";
 import TypeSelector from "../TypeSelector/TypeSelector";
+import TimeSelector from "../TimeSelector/TimeSelector";
 
 import styles from "./MainContent.module.scss";
-import TimeSelector from "../TimeSelector/TimeSelector";
 
 const MainContent: React.FC = () => {
   const { reset, newText, isFinished } = useStore();

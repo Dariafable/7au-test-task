@@ -4,13 +4,13 @@ import { PiPersonArmsSpreadDuotone } from "react-icons/pi";
 
 import { useStore } from "../../store";
 
-import DisplayText from "../DisplayText/DisplayText";
-import InputField from "../InputField/InputField";
-import Results from "../Results/Results";
-import Restart from "../Restart/Restart";
-import Timer from "../Timer/Timer";
-import TypeSelector from "../TypeSelector/TypeSelector";
-import TimeSelector from "../TimeSelector/TimeSelector";
+import DisplayText from "../DisplayText";
+import InputField from "../InputField";
+import Results from "../Results";
+import Restart from "../Restart";
+import Timer from "../Timer";
+import TypeSelector from "../TypeSelector";
+import TimeSelector from "../TimeSelector";
 
 import styles from "./MainContent.module.scss";
 

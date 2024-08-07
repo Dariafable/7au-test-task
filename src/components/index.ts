@@ -1,9 +1,19 @@
-import DisplayText from "./DisplayText/DisplayText";
-import MainContent from "./MainContent/MainContent";
-import Results from "./Results/Results";
-import Restart from "./Restart/Restart";
-import Timer from "./Timer/Timer";
-import TypeSelector from "./TypeSelector/TypeSelector";
-import TimeSelector from "./TimeSelector/TimeSelector";
+import DisplayText from "./DisplayText";
+import InputField from "./InputField";
+import MainContent from "./MainContent";
+import Results from "./Results";
+import Restart from "./Restart";
+import Timer from "./Timer";
+import TypeSelector from "./TypeSelector";
+import TimeSelector from "./TimeSelector";
 
-export { DisplayText, MainContent, Results, Restart, Timer, TypeSelector, TimeSelector };
+export {
+  DisplayText,
+  InputField,
+  MainContent,
+  Results,
+  Restart,
+  Timer,
+  TypeSelector,
+  TimeSelector,
+};
